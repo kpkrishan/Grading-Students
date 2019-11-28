@@ -1,0 +1,25 @@
+1. Take n grading numbers
+2. Take input line by line using an empty list and iterating thru n number of inputs
+3. Iterating through list :
+	check whether the grade is less than 38 or not
+	if less than 38 print the same grade
+	else check for grade >= 38
+		# Here our problem is divided into two parts on the basis of round variable
+
+			round=((grade//10)*10)+5
+
+		if grade <round:
+			check the difference of grade and round for less than 3.
+			if <3
+			 make grade= round as per question
+			else :
+			no rounding off in the grade.
+		else:
+			now check the difference for grade and round+5 for less than 3.
+			
+			if difference <3
+				grade=round+5
+				
+			else:
+				no rounding off the grade to nearest 5.
+		
