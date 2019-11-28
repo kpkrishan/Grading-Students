@@ -1,0 +1,24 @@
+n=int(input())
+lst=[]
+for i in range(n):
+    k=int(input())
+    lst.append(k)
+    
+for grade in lst:
+    if grade<38:
+        print(grade)
+    else:
+        round=((grade//10)*10)+5
+        if grade<round:
+            if round-grade<3:
+                grade=round
+                print(grade)
+            else:
+                print(grade)
+        else:
+            round1=round+5
+            if round1-grade<3:
+                grade=round1
+                print(round1)
+            else:
+                print(grade)
